@@ -1,0 +1,174 @@
+/* Estilos para la barra superior con el nombre e icono */
+.container-fluid {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos para el ícono en la barra superior */
+.container-fluid i {
+    font-size: 40px;
+}
+
+
+
+/* Estilos para alinear verticalmente los iconos del navbar */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.nav-item {
+    text-align: center;
+    display: flex;
+    /* Utilizamos flexbox para alinear verticalmente los íconos */
+    flex-direction: column;
+    /* Alinea los elementos verticalmente */
+    align-items: center;
+    /* Centra los elementos horizontalmente */
+}
+
+/* Estilos adicionales si es necesario */
+.nav-link {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.nav-link:hover {
+    color: #ffcc00;
+}
+
+
+
+/* Estilos específicos para el icono de martini */
+.navbar-nav .nav-item:nth-child(3) .nav-link {
+    margin-top: -10px;
+    /* Ajusta la posición vertical del icono del martini */
+}
+
+
+/* Estilos cuando se pasa el mouse sobre las opciones de navegación */
+.navbar-nav .nav-link:hover {
+    color: #965603;
+    /* Color cuando se pasa el mouse sobre las opciones de navegación */
+}
+
+
+/* Estilos para la barra de descuento */
+.discount-bar {
+    background-color: #ffcc00;
+    /* Color de fondo */
+    color: #333;
+    /* Color del texto */
+    text-align: center;
+    /* Alineación del texto al centro */
+    padding: 10px;
+    /* Espaciado interno */
+    font-size: 18px;
+    /* Tamaño de fuente */
+    font-weight: bold;
+    /* Negrita del texto */
+    white-space: nowrap;
+    /* Evita el salto de línea */
+    overflow: hidden;
+    /* Oculta el contenido que desborda */
+}
+
+/* Animación para el desplazamiento horizontal */
+@keyframes desplazamiento {
+    0% {
+        transform: translateX(100%);
+        
+    }
+
+    100% {
+        transform: translateX(-100%);
+        
+    }
+}
+
+/* Aplicar la animación */
+.discount-bar p {
+    animation: desplazamiento 7s linear infinite;
+    /* 10 segundos de duración, repetición infinita */
+}
+
+
+
+/* Estilos para los títulos de las tarjetas */
+.card-title {
+    font-size: 1.25rem;
+}
+
+/* Estilos para el texto de las tarjetas */
+.card-text {
+    font-size: 1rem;
+}
+
+/* Estilos para el pie de página (si lo deseas) */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos para la sección de información */
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el GIF a la derecha del párrafo */
+.gifd {
+    max-width: 100%;
+    /* Ajusta el ancho máximo del GIF */
+    height: auto;
+    /* Mantiene la proporción de aspecto */
+    float: right;
+    /* Flota el GIF a la derecha */
+
+    background-color: whitesmoke;
+}
+
+
+
+
+/* Estilo para las tarjetas de hamburguesas */
+.card {
+    transition: transform 0.3s;
+    /* Agrega una transición suave a la propiedad transform */
+}
+
+/* Al pasar el mouse sobre la tarjeta de hamburguesa */
+.card:hover {
+    transform: scale(1.1);
+    /* Amplía la tarjeta al 110% del tamaño original */
+}
+
+
+
+@media (max-width: 768px) {
+    /* Estilos para dispositivos móviles */
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    /* Estilos para tabletas */
+}
+
+@media (min-width: 992px) {
+    /* Estilos para pantallas de escritorio */
+}
